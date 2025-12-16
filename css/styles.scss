@@ -112,7 +112,7 @@ body{
 }
 
 /* Fjern line-height for links i kollapset navbar på mobil */
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .navbar-collapse .nav-link {
     line-height: 55px !important;
     padding-top: 0.25rem !important;
@@ -131,34 +131,221 @@ body{
 }
 
 /* Baggrund på burgermenu (mobil) */
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .custom-navbar .navbar-collapse {
     background-color: #141414; /* samme sort som navbar */
   }
 }
 
 .forsidetekst1{
-  padding-left: 7rem;
+  padding-left: 10%;
   font-size: 40px;
   font-weight: lighter;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .forsidetekst1{
-    padding-left: 2rem;
+    padding-left: 10%;
     font-size: 25px;
   }
   }
 
 .forsidetekst2{
-  padding-left: 7rem;
+  padding-left: 10%;
   font-size: 20px;
   font-weight: normal;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .forsidetekst2{
-    padding-left: 2rem;
+    padding-left: 10%;
     font-size: 16px;
   }
 }
+
+/* Desktop */
+@media (min-width: 767px) {
+  .custom-carousel {
+    max-width: 80%; /* justér frit */
+    margin: 0 auto;   /* centrerer carousel */
+  }
+}
+
+/* Mobil */
+@media (max-width: 767px) {
+  .custom-carousel {
+    max-width: 85%; /* justér frit */
+    margin: 0 auto;   /* centrerer carousel */
+  }
+}
+
+.custom-carousel .carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.50); /* justér mørkhed */
+  z-index: 1;
+}
+
+.custom-carousel .carousel-caption {
+  z-index: 2;
+}
+
+/* Mobil */
+@media (max-width: 767px) {
+  .custom-carousel .carousel-caption {
+    font-size: 0.9rem;
+    bottom: 1rem;
+  }
+
+  .custom-carousel .carousel-caption h5 {
+    font-size: 1.1rem;
+  }
+}
+
+.custom-carousel .carousel-link {
+  color: white;          /* samme farve som din caption */
+  text-decoration: none;  /* fjern understregning */
+}
+
+.custom-carousel .carousel-link:hover {
+  color: #d4c85c;          /* hover-farve */
+  text-decoration: underline; /* valgfrit */
+}
+
+.custom-carousel .carousel-link {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+}
+
+.connected-starters2 {
+  color: #fff387;
+  font-size: 8vw; /* responsiv størrelse */
+  padding-left: 1.5rem;  /* svarer til ms-4 */
+  padding-right: 1.5rem; /* svarer til me-4 */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  box-sizing: border-box; /* sikrer, at padding ikke overskrider skærmbredden */
+  background-color: #141414;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.connected-starters2 span {
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .connected-starters2 span {
+    display: block; /* hvert ord på egen linje */
+    font-size: 15vw; /* lidt større på mobil */
+  }
+}
+
+.lokabokse{
+  margin-top: 150px;
+}
+
+.lokabokse a{
+  text-decoration: underline;
+}
+
+/* Desktop */
+@media (min-width: 767px) {
+  .lokabokse{
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+/* Mobil */
+@media (max-width: 767px) {
+  .lokabokse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .lokabokse h1{
+    font-size: 300%;
+  }
+}
+
+@media (max-width: 767px) {
+  .lokabokse p{
+    font-size: 150%;
+  }
+}
+
+.lokaboks2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.lokaboks2 p{
+  font-size: 150%;
+}
+
+@media (max-width: 767px) {
+  .lokaboks2 p{
+    font-size: 150%;
+  }
+}
+
+@media (max-width: 767px) {
+  .lokaboks2 h1{
+    font-size: 175%;
+  }
+}
+
+.footer {
+  background-color: #141414; /* mørk rødbrun som på billedet */
+  padding-top: 200px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
+  margin-top: 150px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer h3 {
+  color: #fff387;
+  font-size: 2vw;
+  margin-bottom: 20px;
+}
+
+.footer p,
+.footer a {
+  color: #fff387;
+  font-size: 1.5vw;
+  line-height: 1.6;
+  text-decoration: none;
+  display: block;
+}
+
+.footer a:hover {
+  color: #d4c85c;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    background-color: #141414; /* mørk rødbrun som på billedet */
+    padding-top: 100px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-top: 100px;
+  }
+}
+
