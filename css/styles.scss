@@ -349,3 +349,28 @@ body{
   }
 }
 
+.forsidetekst12{
+  max-width: 80%;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 10%;
+  margin-top: 75px;
+}
+
+.forsidetekst22{
+  padding-left: 10%;
+  max-width: 80%;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+@media (max-width: 767px) {
+  .forsidetekst22{
+    padding-left: 10%;
+    font-size: 16px;
+  }
+}
+
+.custom-navbar .nav-link.active {
+  color: #b3a645;
+}
